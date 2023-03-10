@@ -34,8 +34,8 @@ export default function TextForms(props) {
     }
 
   return (
-    <>
-    <div className="mb-3"> 
+    <div style={{color:props.mode==="dark"?"white":"black"}}>
+    <div className="mb-3" > 
     
     <label htmlFor ="Enter the text to Analyze" className="form-label"> <h1>{props.headings} </h1></label>
     <textarea className="form-control" value={text} onChange={handleClick} id="1"  rows="8"></textarea>
@@ -52,6 +52,6 @@ export default function TextForms(props) {
         <strong> Preview</strong>
         <p>{text}</p>
     </div>
-    </>
+    </div>
   );
 }
